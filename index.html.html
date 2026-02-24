@@ -1,0 +1,225 @@
+<DOCTYPE! html>
+   <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/cfb1e00541.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<div id="header">
+    <div class="container">
+        <nav>
+           <h1>Magak.</h1>
+           <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#portfolio">Portifolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-xmark" onclick="closemenu()"></i>
+           </ul>
+           <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav> 
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hello <span>there?</span><br>Welcome to my  services</h1>
+
+        </div>
+    </div>
+</div>
+<!-- -------about------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/edit 1.png">
+          </div> 
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I’m a multi-disciplinary tech professional specializing in building robust web applications, extracting meaningful 
+                insights from data, and architecting the secure networks that power them. Whether it’s crafting a seamless UI, optimizing a SQL query, or 
+                configuring a VLAN, I bridge the gap between 
+                code, data, and infrastructure.</p>
+
+                <div class="tab-titles">
+                     <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                     <p class="tab-links" onclick="opentab('experience')">Experince</p>
+                     <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data analyst</span><br>Data cleaning, analysis and Visualizaton</li>
+                        <li><span>Web Developement</span><br>Designing Web interfaces</li>
+                        <li><span>Networking</span><br>Configuring networks,LAN</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                    <ul>
+                        <li><span>2025 - current</span><br>ICT Officer, Business registration service </li>
+                        <li><span>2024-2025</span><br>Intern, Shofco</li>
+                        <li><span>2023-2024</span><br>Attachee,Zetech University</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                    <ul>
+                        <li><span>2025- current</span><br> Bachelor's Computer Science, International University of 
+                            Applied  Sciences</li>
+                        <li><span>2022-2025</span><br>Bachelor in Information Technology, Zetech University</li>
+                    </ul>
+                </div>
+          </div> 
+        </div>
+    </div>
+</div>
+<!-- -----------services---------- -->
+ <div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">  
+        <div>
+        <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p> building a personal portfolio, a to-do list app, a calculator, or a weather app using HTML,
+             CSS, and vanilla JavaScript. Other effective tasks include creating a cookie consent banner, 
+             a text area with a character 
+            counter, or a responsive image gallery</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-network-wired"></i>
+            <h2>Networking</h2>
+            <p>connecting computers and other devices to a local network, configuring basic 
+                router and switch settings, and assigning IP addresses. I also check 
+                network cables and wireless connections to ensure devices can communicate properly.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Data analysis</h2>
+            <p> work with simple datasets by collecting data, cleaning it to remove errors
+                 or duplicates, and organizing it in spreadsheets or analysis tools. I calculate basic statistics 
+                such as totals, averages, and percentages to understand the data.</p>
+            <a href="#">Learn more</a>
+        </div>
+    </div>
+    <!--  -------portfolio----------  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/g3.png">
+                    <div class="layer">
+                        <h3>Web design</h3>
+                        <p>Front-end web developement, Designing of portfolios,hotel websites and many more</p>
+               <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                </div>
+            <div class="work">
+                    <img src="images/g2.png">
+                    <div class="layer">
+                        <h3>Networking</h3>
+                        <p>Network configuration, tethering using Rj45 and also CCTV installation</p>
+               <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                </div>
+                <div class="work">
+                 <img src="images/g1.png">
+                 <div class="layer">
+                        <h3>Data analysis</h3>
+                        <p>Data visualization and cleaning  through the use of power BI and looker studi</p>
+               <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+        </div>  
+    </div>
+    <a href="#" class="btn">See more</a>
+        </div>
+ </div>
+ <!-- -------contact------ -->
+  <div id="contact">
+<div class="container">
+    <div class="row">
+   <div class="contact-left">
+    <h1 class="sub-title">Contact Me</h1>
+    <p><i class="fa-regular fa-paper-plane"></i>magakgodry@gmail.com</p>
+    <p><i class="fa-solid fa-phone"></i>+254729040125</p>
+    <div class="social-icons">
+        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com/magakouma"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://linkedin.com/in/magak-ouma-4a387a23a"><i class="fa-brands fa-linkedin"></i></a>
+       </div>
+       <a href="images/Emmanuel     cv.pdf" download class="btn btn2">Download CV</a>
+   </div>
+   <div class="contact-right">
+   <form name="submit-to-google-sheet">
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="Email" placeholder="Your Email" required>
+    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+    <button type="submit" class="btn btn2">Submit</button>
+   </form>
+   <span id="msg"></span>
+    </div>
+</div>
+</div>
+<div class="copyright">
+    <p>copyright © Magak@2026</p>
+   </div>
+</div>
+    
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyviWKgt-c8OMLONISTM0ENQEFhzgqKIT_ivrMTXq8ok0hAjwyOpXdX8Fd51rxzaGtoqA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent sucessfully"
+        setTimeout(function(){ 
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+        
+    </body>
+   </html> 
